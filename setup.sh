@@ -36,6 +36,6 @@ chmod +x "$NODE"
 "$NODE" --version
 "$NODE" --dns-result-order=ipv4first -e 'console.log("ok")'
 
-# Restart server
+# Restart server and reload vscode window or reconnect
 pkill -f vscode-server-insiders 2>/dev/null
 rm -f ~/.vscode-server-insiders/*.pid
